@@ -128,13 +128,6 @@ class _ItemDetails extends StatelessWidget {
       ),
     );
   }
-
-  BoxDecoration _boxDecorationnDetails() => const BoxDecoration(
-      color: Colors.deepOrange,
-      borderRadius: BorderRadius.only(
-        bottomLeft: Radius.circular(25),
-        topRight: Radius.circular(25),
-      ));
 }
 
 class _BackgroundImage extends StatelessWidget {
