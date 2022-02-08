@@ -1,6 +1,6 @@
-# verdad_reto_app
+# APP: Verdad o Reto
 
-A new Flutter project.
+Un proyecto realizado con flutter.
 
 ## Getting Started
 
