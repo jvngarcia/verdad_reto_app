@@ -23,7 +23,6 @@ class ItemPrincipalMenu extends StatelessWidget {
       child: Container(
         margin: const EdgeInsets.only(top: 30, bottom: 30),
         width: double.infinity,
-        height: 270,
         decoration: _cardBorders(),
         child: InkWell(
           borderRadius: BorderRadius.circular(25),
@@ -73,9 +72,8 @@ class _ItemDetails extends StatelessWidget {
     return Padding(
       padding: const EdgeInsets.only(right: 30),
       child: Container(
-        padding: const EdgeInsets.symmetric(horizontal: 30, vertical: 10),
+        padding: const EdgeInsets.symmetric(horizontal: 30, vertical: 40),
         width: double.infinity,
-        height: 200,
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
