@@ -71,7 +71,7 @@ class _ItemDetails extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.only(right: 60),
+      padding: const EdgeInsets.only(right: 30),
       child: Container(
         padding: const EdgeInsets.symmetric(horizontal: 30, vertical: 10),
         width: double.infinity,
@@ -89,7 +89,7 @@ class _ItemDetails extends StatelessWidget {
               maxLines: 1,
               overflow: TextOverflow.ellipsis,
             ),
-            const SizedBox(height: 30),
+            const SizedBox(height: 20),
             Text(
               titulo,
               style: const TextStyle(
@@ -104,15 +104,15 @@ class _ItemDetails extends StatelessWidget {
             Text(
               subtitulo,
               style: const TextStyle(
-                fontSize: 20,
+                fontSize: 18,
                 color: Colors.black87,
               ),
-              maxLines: 1,
+              maxLines: 3,
               overflow: TextOverflow.ellipsis,
             ),
-            const SizedBox(height: 20),
+            const SizedBox(height: 10),
             const Padding(
-              padding: EdgeInsets.only(right: 150),
+              padding: EdgeInsets.only(right: 10),
               child: Text(
                 '¡Disfruta del modo mas jugado por todos!',
                 style: TextStyle(

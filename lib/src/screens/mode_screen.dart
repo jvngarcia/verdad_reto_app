@@ -34,13 +34,15 @@ class _ModeScreenState extends State<ModeScreen> {
           children: [
             Container(
               padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 30),
-              width: 450,
-              height: 150,
+              width: 320,
+              height: 200,
               alignment: Alignment.center,
               decoration: _cardDecoration(),
               child: Text(
                 text,
-                style: const TextStyle(fontSize: 20),
+                style: const TextStyle(
+                  fontSize: 16,
+                ),
                 textAlign: TextAlign.center,
               ),
             ),
@@ -62,7 +64,7 @@ class _ModeScreenState extends State<ModeScreen> {
                     child: const Text(
                       'VERDAD',
                       style: TextStyle(
-                        fontSize: 20,
+                        fontSize: 12,
                         color: Colors.white,
                       ),
                     ),
@@ -83,7 +85,7 @@ class _ModeScreenState extends State<ModeScreen> {
                     child: const Text(
                       'RETO',
                       style: TextStyle(
-                        fontSize: 20,
+                        fontSize: 12,
                         color: Colors.white,
                       ),
                     ),

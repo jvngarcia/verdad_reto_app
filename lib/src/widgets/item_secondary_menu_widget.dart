@@ -23,7 +23,6 @@ class ItemSecondaryMenu extends StatelessWidget {
         margin: const EdgeInsets.symmetric(horizontal: 10, vertical: 10),
         decoration: _cardDecoration(),
         width: double.infinity,
-        height: 250,
         child: InkWell(
           onTap: () {
             if (mode == 'pagina') {
@@ -77,15 +76,15 @@ class _ItemDetails extends StatelessWidget {
             titulo,
             style: const TextStyle(
               color: Colors.deepOrange,
-              fontSize: 20,
+              fontSize: 18,
             ),
           ),
-          const SizedBox(height: 10),
+          const SizedBox(height: 5),
           Text(
             subtitulo,
             style: const TextStyle(
               color: Colors.black54,
-              fontSize: 15,
+              fontSize: 13,
             ),
           ),
         ],
@@ -107,7 +106,7 @@ class _PrincipalImg extends StatelessWidget {
         topRight: Radius.circular(25),
       ),
       child: Container(
-        height: 150,
+        height: 110,
         child: FadeInImage(
           width: double.infinity,
           placeholder: AssetImage(img),

@@ -41,7 +41,7 @@ class ComoJugarScreen extends StatelessWidget {
                     Text(
                       '¡Las reglas son simples! Cada jugador tiene un turno para contestar el teléfono y elegir entre verdad o reto. Si elige verdad, debe responder con sinceridad la pregunta que aparece en pantalla. Si elige reto, debe ejecutar la acción que aparece en pantalla. Si se niega, deberá realizar un reto proporcionado por todo el equipo.',
                       style: TextStyle(
-                        fontSize: 15,
+                        fontSize: 14,
                       ),
                     ),
                   ],
