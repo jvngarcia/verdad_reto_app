@@ -105,7 +105,7 @@ class _PrincipalImg extends StatelessWidget {
         topLeft: Radius.circular(25),
         topRight: Radius.circular(25),
       ),
-      child: Container(
+      child: SizedBox(
         height: 110,
         child: FadeInImage(
           width: double.infinity,
