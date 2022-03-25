@@ -1,4 +1,4 @@
-package com.example.verdad_reto_app
+package com.jvngarcia.vor
 
 import io.flutter.embedding.android.FlutterActivity
 

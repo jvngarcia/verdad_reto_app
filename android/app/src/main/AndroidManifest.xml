@@ -1,5 +1,5 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.verdad_reto_app">
+    package="com.jvngarcia.vor">
    <application
         android:label="VoR"
         android:name="${applicationName}"
