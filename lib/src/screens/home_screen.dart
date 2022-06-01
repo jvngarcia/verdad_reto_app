@@ -37,6 +37,19 @@ class HomeScreen extends StatelessWidget {
                   subtitulo: 'Preguntas y retos sencillos',
                 ),
                 ItemSecondaryMenu(
+                  img: 'assets/images/modo-normal.jpg',
+                  titulo: 'Novios',
+                  subtitulo: 'Preguntas y retos para parejas',
+                ),
+              ],
+            ),
+          ),
+
+          Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
+            child: Row(
+              children: const [
+                ItemSecondaryMenu(
                   img: 'assets/images/pagina-preguntas.jpg',
                   titulo: 'Como jugar',
                   subtitulo: 'Conoce las reglas',
