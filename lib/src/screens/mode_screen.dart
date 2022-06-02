@@ -1,3 +1,4 @@
+import 'package:google_mobile_ads/google_mobile_ads.dart';
 import 'package:flutter/material.dart';
 import 'package:verdad_reto_app/src/layouts/layouts.dart';
 import 'package:verdad_reto_app/src/providers/providers.dart';
@@ -12,6 +13,42 @@ class ModeScreen extends StatefulWidget {
 class _ModeScreenState extends State<ModeScreen> {
   String text = '¿Ya sabes que elegirás?';
 
+  final BannerAd myBanner = BannerAd(
+    adUnitId: 'ca-app-pub-7376555429579726/1464280781',
+    size: AdSize.banner,
+    request: const AdRequest(
+      keywords: [
+        'game',
+        'games',
+        'plays',
+        'play',
+        'money',
+        'Verdad o reto',
+        'juego',
+        'juegos',
+        'jugadores',
+        'jugador',
+        'retos',
+        'juegos para fiestas',
+        'juegos para reuniones',
+      ],
+    ),
+    listener: const BannerAdListener(),
+  );
+
+  @override
+  void initState() {
+    super.initState();
+    myBanner.load();
+    // Load ads.
+  }
+
+  @override
+  void dispose() {
+    super.dispose();
+    myBanner.dispose();
+  }
+
   void _handleTap(mode, option) {
     setState(() {
       final data = gameMode.loadData(mode, option);
@@ -23,6 +60,7 @@ class _ModeScreenState extends State<ModeScreen> {
 
   @override
   Widget build(BuildContext context) {
+    final AdWidget adWidget = AdWidget(ad: myBanner);
     final String mode =
         ModalRoute.of(context)?.settings.arguments.toString() ?? 'no-mode';
 
@@ -32,6 +70,12 @@ class _ModeScreenState extends State<ModeScreen> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
+            Container(
+              alignment: Alignment.center,
+              child: adWidget,
+              width: myBanner.size.width.toDouble(),
+              height: myBanner.size.height.toDouble(),
+            ),
             Container(
               padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 30),
               width: 320,
